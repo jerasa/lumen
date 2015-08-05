@@ -15,3 +15,7 @@ $app->get('/', function() use ($app) {
     return $app->welcome();
 //    return 'You\'v arrived!';
 });
+
+$app->get('/hello', function () {
+    return 'My path is: ' . url('hello');
+});
